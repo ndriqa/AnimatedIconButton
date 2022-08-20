@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AnimatedIconButtonExample</string>
+    <string name="like_button">Like Button</string>
+    <string name="video_quality_button">Video Quality Button</string>
+    <string name="bluetooth_button">Bluetooth Button</string>
+    <string name="listener_callback">listener callback:</string>
+</resources>
