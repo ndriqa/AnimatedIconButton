@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/32796182/185722085-0294167f-18a3-41dc-
 - Add it in your root build.gradle at the end of repositories:
 ```
 allprojects {
-	repositories {
+    repositories {
 		...
 		maven { url 'https://www.jitpack.io' }
 	}
@@ -38,30 +38,30 @@ dependencies {
 - Set up the button drawables you want to use: 
 ```
 binding.bluetoothButton.setResources(
-  R.drawable.ic_bluetooth_disabled,
-  R.drawable.ic_bluetooth_enabled,
-  R.drawable.ic_bluetooth_connected,
+	R.drawable.ic_bluetooth_disabled,
+	R.drawable.ic_bluetooth_enabled,
+	R.drawable.ic_bluetooth_connected,
 )
 ```
 
 - Add on click listener to toggle through drawables:
 ```
 binding.bluetoothButton.setOnClickListener {
-  binding.bluetoothButton.toggle()
+	binding.bluetoothButton.toggle()
 }
 ```
 
 - You can also set an OnDrawableChangeListener
 ```
 binding.bluetoothButton.setOnDrawableChangeListener(object : OnDrawableChangeListener {
-  override fun onDrawableChange(drawableResId: Int) {
-    binding.bluetoothStateTextView.text = when(drawableResId) {
-      R.drawable.ic_bluetooth_disabled -> "off"
-      R.drawable.ic_bluetooth_enabled -> "on"
-      R.drawable.ic_bluetooth_connected -> "connected"
-      else -> "unknown"
-    }
-  }
+	override fun onDrawableChange(drawableResId: Int) {
+		binding.bluetoothStateTextView.text = when(drawableResId) {
+			R.drawable.ic_bluetooth_disabled -> "off"
+			R.drawable.ic_bluetooth_enabled -> "on"
+			R.drawable.ic_bluetooth_connected -> "connected"
+			else -> "unknown"
+		}
+	}
 })
 ```
 
