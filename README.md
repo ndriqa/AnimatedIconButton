@@ -1,3 +1,7 @@
+# Latest version
+
+[![](https://www.jitpack.io/v/ndriqa/AnimatedIconButton.svg)](https://www.jitpack.io/#ndriqa/AnimatedIconButton)
+
 # AnimatedIconButton
 
 This is a new library I made to animate an ImageButton on click.
@@ -26,7 +30,7 @@ allprojects {
 - Add the dependency
 ```
 dependencies {
-	implementation 'com.github.ndriqa:AnimatedIconButton:1.0'
+	implementation 'com.github.ndriqa:AnimatedIconButton:latest_version'
 }
 ```
 
