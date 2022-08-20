@@ -26,7 +26,7 @@ allprojects {
 - Add the dependency
 ```
 dependencies {
-	implementation 'com.github.ndriqa:AnimatedIconButton:latestRelease'
+	implementation 'com.github.ndriqa:AnimatedIconButton:1.0'
 }
 ```
 
